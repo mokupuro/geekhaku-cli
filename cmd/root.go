@@ -23,7 +23,6 @@ package cmd
 
 import (
 	"os"
-	"path/filepath"
 
 	"github.com/mokupuro/geekhaku-cli/utils"
 	"github.com/spf13/cobra"

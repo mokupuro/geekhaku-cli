@@ -38,6 +38,6 @@ func main() {
 }
 
 func showVersion(version string, revision string) {
-		format := `Version: %s-%s`
-		fmt.Println(fmt.Sprintf(format, version, revision))
+	format := `Version: %s-%s`
+	fmt.Println(fmt.Sprintf(format, version, revision))
 }

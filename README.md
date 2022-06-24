@@ -17,6 +17,12 @@ or
 $ brew install mokupuro/geekhaku-cli/geekhaku-cli
 ```
 
+## Update
+
+```
+$ brew upgrade mokupuro/geekhaku-cli/geekhaku-cli
+```
+
 ## Usage
 
 ## License

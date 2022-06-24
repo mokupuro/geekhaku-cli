@@ -1,0 +1,29 @@
+project_name: geekhaku-cli
+env:
+  - GO111MODULE=on
+before:
+  hooks:
+    - go mod tidy
+builds:
+  - main: .
+    binary: geekhaku-cli
+    ldflags: -s -w -X main.version={{.Version}} -X main.revision={{.ShortCommit}} -X main.date={{.Date}}
+archives:
+  - replacements:
+      darwin: darwin
+      linux: linux
+      windows: windows
+      amd64: x86_64
+    files:
+      - LICENSE
+      - CREDITS
+release:
+  prerelease: auto
+brews:
+  - tap:
+      owner: mokupuro
+      name: homebrew-geekhaku-cli
+    folder: Formula
+    homepage: 'https://github.com/mokupuro/geekhaku-cli'
+    description: 'Generates the URL link in various formats'
+    license: "MIT"

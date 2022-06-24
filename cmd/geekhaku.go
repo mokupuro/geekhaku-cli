@@ -45,15 +45,15 @@ func selctType() {
 	switch result {
 
 	case "Default":
-		utils.PrintAAFromTxt("./aa/geekhaku.txt")
+		utils.PrintAAFromTxt("aa/geekhaku.txt")
 	case "Kanji":
-		utils.PrintAAFromTxt("./aa/geekhaku_kanji.txt")
+		utils.PrintAAFromTxt("aa/geekhaku_kanji.txt")
 	case "Shadow":
-		utils.PrintAAFromTxt("./aa/geekhaku_shadow.txt")
+		utils.PrintAAFromTxt("aa/geekhaku_shadow.txt")
 	case "Moon":
-		utils.PrintAAFromTxt("./aa/geekhaku_moon.txt")
+		utils.PrintAAFromTxt("aa/geekhaku_moon.txt")
 	case "3D":
-		utils.PrintAAFromTxt("./aa/geekhaku_3d.txt")
+		utils.PrintAAFromTxt("aa/geekhaku_3d.txt")
 	}
 
 }

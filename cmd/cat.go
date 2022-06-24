@@ -15,7 +15,7 @@ var catCmd = &cobra.Command{
 	Use:   "cat",
 	Short: "Print the ascii art of cat",
 	Run: func(cmd *cobra.Command, args []string) {
-		utils.PrintAAFromTxt("./aa/cat.txt")
+		utils.PrintAAFromTxt("aa/cat.txt")
 	},
 }
 

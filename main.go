@@ -28,13 +28,16 @@ import (
 )
 
 var (
-	version   string
-	revision  string
+	version  string
+	revision string
 )
 
 func main() {
+	showVersion(version, revision)
+	cmd.Execute()
+}
+
+func showVersion(version string, revision string) {
 	format := `Version: %s-%s`
 	fmt.Println(fmt.Sprintf(format, version, revision))
-	
-	cmd.Execute()
 }

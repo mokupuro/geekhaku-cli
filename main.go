@@ -33,8 +33,11 @@ var (
 )
 
 func main() {
-	format := `Version: %s-%s`
-	fmt.Println(fmt.Sprintf(format, version, revision))
-
+	showVersion(version, revision)
 	cmd.Execute()
+}
+
+func showVersion(version string, revision string) {
+		format := `Version: %s-%s`
+		fmt.Println(fmt.Sprintf(format, version, revision))
 }

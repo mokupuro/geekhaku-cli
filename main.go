@@ -21,8 +21,20 @@ THE SOFTWARE.
 */
 package main
 
-import "github.com/mokupuro/geekhaku-cli/cmd"
+import (
+	"fmt"
+
+	"github.com/mokupuro/geekhaku-cli/cmd"
+)
+
+var (
+	version   string
+	revision  string
+)
 
 func main() {
+	format := `Version: %s-%s`
+	fmt.Println(fmt.Sprintf(format, version, revision))
+	
 	cmd.Execute()
 }

@@ -10,8 +10,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-
-
 // catCmd represents the cat command
 var catCmd = &cobra.Command{
 	Use:   "cat",

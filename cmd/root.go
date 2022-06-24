@@ -23,6 +23,7 @@ package cmd
 
 import (
 	"os"
+	"path/filepath"
 
 	"github.com/mokupuro/geekhaku-cli/utils"
 	"github.com/spf13/cobra"
@@ -32,10 +33,10 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "geekhaku-cli",
 	Short: "A CLI tool that displays information about the geekhaku sponsored by Supporters.inc",
-	Long:  utils.AAFromText("aa/geekhaku_3d.txt"),
+	Long:  utils.AAFromText("./aa/geekhaku_3d.txt"),
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	// Run: func(cmd *cobra.Command, args []string) { },
+	// Run: func(cmd *cobra.Command, args []string) {},
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.

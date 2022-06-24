@@ -12,3 +12,11 @@ func PrintAAFromTxt(fp string) {
 	}
 	fmt.Print(string(b))
 }
+
+func AAFromText(fp string) string {
+	b, err := os.ReadFile(fp)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return string(b)
+}

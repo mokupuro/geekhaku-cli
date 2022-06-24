@@ -15,7 +15,7 @@ var docCmd = &cobra.Command{
 	Use:   "doc",
 	Short: "Print the ascii art of doc",
 	Run: func(cmd *cobra.Command, args []string) {
-		utils.PrintAAFromTxt("./aa/doc.txt")
+		utils.PrintAAFromTxt("aa/doc.txt")
 	},
 }
 

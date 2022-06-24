@@ -46,7 +46,7 @@ func selctType() {
 	switch result {
 
 	case "Default":
-		utils.PrintAAFromTxt("./aa/geekhaku_kanji.txt")
+		utils.PrintAAFromTxt("./aa/geekhaku_.txt")
 	case "Kanji":
 		utils.PrintAAFromTxt("./aa/geekhaku_kanji.txt")
 	case "Shadow":

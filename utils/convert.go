@@ -3,17 +3,13 @@ package utils
 import (
 	"fmt"
 	"os"
-	"path/filepath"
 )
 
-func PrintAAFromTxt(fp string) {
-	path, err := filepath.Abs(fp)
-	if err != nil {
-		fmt.Println(err)
-	}
 
-	b, err := os.ReadFile(path)
+func PrintAAFromTxt(fp string) {
+	b, err := os.ReadFile(fp)
 	if err != nil {
+		fmt.Println("read file")
 		fmt.Println(err)
 	}
 	fmt.Print(string(b))

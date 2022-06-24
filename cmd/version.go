@@ -14,7 +14,7 @@ import (
 var versionCmd = &cobra.Command{
 	Use:   "version",
 	Short: "Print the version number of geekhaku-cli",
-	Long: "All software has versions. This is geekhaku-cli's",
+	Long:  "All software has versions. This is geekhaku-cli's",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("version 0.9 -- HEAD")
 	},

@@ -9,9 +9,11 @@ builds:
     binary: geekhaku-cli
     ldflags: -s -w -X main.version={{.Version}} -X main.revision={{.ShortCommit}} -X main.date={{.Date}}
     gcflags:
-      - all=-trimpath={{.Env.GOPATH}}
+      - all=-trimpath
+      # - all=-trimpath={{.Env.GOPATH}}
     asmflags:
-      - all=-trimpath={{.Env.GOPATH}}
+      - all=-trimpath
+      # - all=-trimpath={{.Env.GOPATH}}
 
 archives:
   - replacements:

@@ -10,7 +10,7 @@ func PrintAAFromTxt(fp string) {
 
 	p, _ := os.Getwd()
 	fmt.Println(p)
-	b, err := os.ReadFile(filepath.Join("aa", fp))
+	b, err := os.ReadFile(filepath.Join(".","aa", fp))
 	if err != nil {
 		fmt.Println("read file")
 		fmt.Println(err)
@@ -19,7 +19,7 @@ func PrintAAFromTxt(fp string) {
 }
 
 func AAFromText(fp string) string {
-	b, err := os.ReadFile(filepath.Join("aa", fp))
+	b, err := os.ReadFile(filepath.Join(".","aa", fp))
 	if err != nil {
 		fmt.Println(err)
 	}

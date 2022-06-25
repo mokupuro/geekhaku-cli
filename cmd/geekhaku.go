@@ -27,7 +27,6 @@ func init() {
 }
 
 func selctType() {
-
 	prompt := promptui.Select{
 		Label:     "What format do you want to display?",
 		Items:     []string{"Default", "Kanji", "Shadow", "Moon", "3D"},
@@ -46,15 +45,15 @@ func selctType() {
 	switch result {
 
 	case "Default":
-		utils.PrintAAFromTxt("./aa/geekhaku_.txt")
+		utils.PrintAAFromTxt("geekhaku.txt")
 	case "Kanji":
-		utils.PrintAAFromTxt("./aa/geekhaku_kanji.txt")
+		utils.PrintAAFromTxt("geekhaku_kanji.txt")
 	case "Shadow":
-		utils.PrintAAFromTxt("./aa/geekhaku_shadow.txt")
+		utils.PrintAAFromTxt("geekhaku_shadow.txt")
 	case "Moon":
-		utils.PrintAAFromTxt("aa/geekhaku_moon.txt")
+		utils.PrintAAFromTxt("geekhaku_moon.txt")
 	case "3D":
-		utils.PrintAAFromTxt("aa/geekhaku_3d.txt")
+		utils.PrintAAFromTxt("geekhaku_3d.txt")
 	}
 
 }

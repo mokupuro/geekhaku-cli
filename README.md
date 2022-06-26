@@ -1,8 +1,10 @@
 # geekhaku-cli
 技育博用にGoで作ったCLIツール
 
-## Installation
+<img width="500" alt="スクリーンショット 2022-06-26 17 09 28" src="https://user-images.githubusercontent.com/64648525/175805913-e9a18671-5b5e-452b-a05a-fda74e1c0f05.png">
 
+
+## Installation
 - go
 
 ```

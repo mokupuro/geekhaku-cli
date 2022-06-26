@@ -25,7 +25,8 @@ $ brew upgrade mokupuro/geekhaku-cli/geekhaku-cli
 
 ## Usage
 
-![](https://github.com/mokupuro/geekhaku-cli/blob/main/geekhaku.gif)
+![](https://github.com/mokupuro/geekhaku-cli/blob/main/geekhaku_init.gif)
+![](https://github.com/mokupuro/geekhaku-cli/blob/main/geekhaku_logo.gif)
 
 ## License
 

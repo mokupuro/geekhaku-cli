@@ -10,11 +10,6 @@ builds:
     ldflags: -s -w -X main.version={{.Version}} -X main.revision={{.ShortCommit}} -X main.date={{.Date}}
     flags:
       - -trimpath
-    # gcflags:
-    #   - all=-trimpath={{ dir .Env.PWD }}
-    # asmflags:
-    #   - all=-trimpath={{ dir .Env.PWD }}
-
 
 archives:
   - replacements:

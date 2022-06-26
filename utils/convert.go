@@ -1,27 +1,40 @@
 package utils
 
 import (
+	"bytes"
 	"fmt"
-	"os"
 	"path/filepath"
+
+	_ "github.com/mokupuro/geekhaku-cli/statik"
+	"github.com/rakyll/statik/fs"
 )
 
 func PrintAAFromTxt(fp string) {
-
-	p, _ := os.Getwd()
-	fmt.Println(p)
-	b, err := os.ReadFile(filepath.Join("aa", fp))
-	if err != nil {
-		fmt.Println("read file")
-		fmt.Println(err)
-	}
-	fmt.Print(string(b))
+	text := readFile(filepath.Join("/", fp))
+	fmt.Print(text)
 }
 
 func AAFromText(fp string) string {
-	b, err := os.ReadFile(filepath.Join("aa", fp))
+	text := readFile(filepath.Join("/", fp))
+	return text
+}
+
+func readFile(fp string) string {
+	statikFS, err := fs.New()
+	if err != nil {
+		fmt.Println("************************:")
+		fmt.Println(err)
+		fmt.Println("************************:")
+	}
+
+	file, err := statikFS.Open(fp)
 	if err != nil {
 		fmt.Println(err)
 	}
-	return string(b)
+	defer file.Close()
+
+	// ファイルを読み込んで出力
+	buf := new(bytes.Buffer)
+	buf.ReadFrom(file)
+	return buf.String()
 }

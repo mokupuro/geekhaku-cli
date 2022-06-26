@@ -1,4 +1,4 @@
-.PHONY: fmt clean deps build add-cmd run
+.PHONY: fmt clean deps build run add-cmd run-cmd statik-generate
 
 VERSION = 0.0.1
 BUILD_FLAGS = -ldflags "\
@@ -35,3 +35,5 @@ add-cmd:
 run-cmd:
 	go run main.go ${ARG}
 
+statik-generate:
+	statik -src=./aa

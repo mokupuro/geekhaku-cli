@@ -15,8 +15,7 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 # [Optional] Uncomment the next lines to use go get to install anything else you need
 USER vscode
 RUN go install github.com/spf13/cobra-cli@latest \
-    && go install github.com/sugyan/ttyrec2gif@latest \
-    && go install github.com/rakyll/statik@latest
+    && go install github.com/sugyan/ttyrec2gif@latest
 
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1

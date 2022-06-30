@@ -34,7 +34,3 @@ add-cmd:
 
 run-cmd:
 	go run main.go ${ARG}
-
-aa-generate:
-	rm -r statik
-	statik -src=./aa

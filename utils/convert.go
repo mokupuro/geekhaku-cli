@@ -5,29 +5,21 @@ import (
 	"fmt"
 	"path/filepath"
 
-	_ "github.com/mokupuro/geekhaku-cli/statik"
-	"github.com/rakyll/statik/fs"
+	"github.com/mokupuro/geekhaku-cli/static"
 )
 
 func PrintAAFromTxt(fp string) {
-	text := readFile(filepath.Join("/", fp))
+	text := readFile(filepath.Join("aa", fp))
 	fmt.Print(text)
 }
 
 func AAFromText(fp string) string {
-	text := readFile(filepath.Join("/", fp))
+	text := readFile(filepath.Join("aa", fp))
 	return text
 }
 
 func readFile(fp string) string {
-	statikFS, err := fs.New()
-	if err != nil {
-		fmt.Println("************************:")
-		fmt.Println(err)
-		fmt.Println("************************:")
-	}
-
-	file, err := statikFS.Open(fp)
+	file, err := static.Aa.Open(fp)
 	if err != nil {
 		fmt.Println(err)
 	}
